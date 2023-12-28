@@ -28,10 +28,8 @@ export default function RootLayout({
           "min-h-screen bg-[#f5F5F5] font-sans antialiased",
           fontSans.variable
         )}>
-          <nav>
-            <Navbar />
-            <Sidebar />
-          </nav>
+          <Navbar />
+          <Sidebar />
           <main className='flex justify-center items-center'>
             {children}
           </main>
