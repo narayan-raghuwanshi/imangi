@@ -13,7 +13,7 @@ const Sidebar = () => {
 
     return (
         <div>
-            <div className={cn('bg-white left-0 w-[245px] px-[23.5px] md:px-12 fixed inset-0 z-50 pt-5 flex flex-col justify-between items-center', (!open) ? 'hidden' : '')}>
+            <div className={cn('bg-white left-0 w-[260px] px-[23.5px] md:px-12 fixed inset-0 z-50 pt-5 flex flex-col justify-between items-center', (!open) ? 'hidden' : '')}>
                 <div className='flex flex-col space-y-7'>
                     <div className='self-center'>
                         <Link href="/">
