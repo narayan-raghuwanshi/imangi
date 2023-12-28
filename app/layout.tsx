@@ -1,15 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter as FontSans } from "next/font/google"
+import { Inter } from 'next/font/google'
 import './globals.css'
-import { cn } from '@/lib/utils'
 import { ClerkProvider } from '@clerk/nextjs'
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Necleo',
@@ -24,10 +20,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={cn(
-          "min-h-screen bg-[#f5F5F5] font-sans antialiased",
-          fontSans.variable
-        )}>
+        <body  className={font.className}>
           <Navbar />
           <Sidebar />
           <main className='flex justify-center items-center'>
