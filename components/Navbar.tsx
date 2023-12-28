@@ -1,5 +1,6 @@
 import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
@@ -7,13 +8,15 @@ const Navbar = () => {
         <nav className='bg-white'>
             <div className='flex justify-between items-center px-4 md:px-10 py-3'>
                 <div>
-                    <Image
-                        src={"/logo.png"}
-                        alt='logo'
-                        width={80}
-                        height={30}
-                        className='ml-[42px]'
-                        quality={100} />
+                    <Link href="/">
+                        <Image
+                            src={"/logo.png"}
+                            alt='logo'
+                            width={80}
+                            height={30}
+                            className='ml-[42px]'
+                            quality={100} />
+                    </Link>
                 </div>
                 <div className='flex justify-end space-x-5'>
                     <div className='flex flex-col justify-center items-start'>

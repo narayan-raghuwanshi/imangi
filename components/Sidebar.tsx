@@ -13,16 +13,18 @@ const Sidebar = () => {
 
     return (
         <div>
-            <div className={cn('bg-white left-0 w-fit px-[23.5px] md:px-12 fixed inset-0 z-50 pt-5 flex flex-col justify-between items-center', (!open) ? 'hidden' : '')}>
+            <div className={cn('bg-white left-0 w-[245px] px-[23.5px] md:px-12 fixed inset-0 z-50 pt-5 flex flex-col justify-between items-center', (!open) ? 'hidden' : '')}>
                 <div className='flex flex-col space-y-7'>
                     <div className='self-center'>
-                        <Image
-                            src={"/logo.png"}
-                            alt='logo'
-                            width={80}
-                            height={40}
-                            className='-mt-0.5'
-                            quality={100} />
+                        <Link href="/">
+                            <Image
+                                src={"/logo.png"}
+                                alt='logo'
+                                width={80}
+                                height={40}
+                                className='-mt-0.5'
+                                quality={100} />
+                        </Link>
                     </div>
                     <hr className='border-t-2 bg-[#c4c4c4]' />
                     <div className='flex flex-col space-y-7'>
@@ -69,7 +71,7 @@ const Sidebar = () => {
                     </button>
                 </div>
             </div>
-            <div className={cn('flex fixed bottom-8 left-10 bg-white px-3 py-2 rounded-md hover:border-gray-300 transition hover:border', (open) ? 'hidden' : '')}>
+            <div className={cn('flex fixed bottom-8 left-10 bg-gray-200 text-white px-3 py-2 rounded-md hover:border-gray-300 transition hover:border', (open) ? 'hidden' : '')}>
                 <button
                     className='flex gap-2 text-gray-800 font-semibold hover:text-gray-700 transition'
                     onClick={() => {
