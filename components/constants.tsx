@@ -9,22 +9,22 @@ import {
 
 export const topItemsSidebar = [
     {
-        "title": "My Projects",
+        "title": "Generate",
         "icon": <Database />,
         "href": "/"
     },
     {
-        "title": "Sample Projects",
+        "title": "Collection",
         "icon": <LayoutGrid />,
-        "href": "/sampleprojects"
+        "href": "/collection"
     },
     {
-        "title": "Apps",
+        "title": "Community",
         "icon": <LayoutPanelTop />,
-        "href": "/apps"
+        "href": "/community"
     },
     {
-        "title": "Intro to Necleo",
+        "title": "Intro to Imangi",
         "icon": <PlayCircle />,
         "href": "/intro"
     }

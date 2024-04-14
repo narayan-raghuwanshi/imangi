@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { bottomItemsSidebar, topItemsSidebar } from './constants'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { ArrowLeftSquare, ArrowRightSquare } from 'lucide-react'
+import { ArrowLeftSquare, ArrowRightSquare, Sparkles } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 const Sidebar = () => {
@@ -16,14 +16,8 @@ const Sidebar = () => {
             <div className={cn('bg-white left-0 w-[260px] px-[23.5px] md:px-12 fixed inset-0 z-50 pt-5 flex flex-col justify-between items-center', (!open) ? 'hidden' : '')}>
                 <div className='flex flex-col space-y-7'>
                     <div className='self-center'>
-                        <Link href="/">
-                            <Image
-                                src={"/logo.png"}
-                                alt='logo'
-                                width={80}
-                                height={40}
-                                className='-mt-0.5'
-                                quality={100} />
+                        <Link href="/" className='flex gap-2'>
+                            <Sparkles /><span className='font-semibold text-gray-600'>Imangi</span>
                         </Link>
                     </div>
                     <hr className='border-t-2 bg-[#c4c4c4]' />

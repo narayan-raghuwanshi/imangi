@@ -9,8 +9,8 @@ import { cn } from '@/lib/utils'
 const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Necleo',
-  description: 'Dashboard for Necloe',
+  title: 'Imangi',
+  description: 'Imangi image generation app.',
 }
 
 export default function RootLayout({

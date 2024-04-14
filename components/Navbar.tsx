@@ -1,4 +1,5 @@
 import { UserButton } from '@clerk/nextjs'
+import { Sparkles } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -8,14 +9,8 @@ const Navbar = () => {
         <nav className='bg-white'>
             <div className='flex justify-between items-center px-4 md:px-10 py-3'>
                 <div>
-                    <Link href="/">
-                        <Image
-                            src={"/logo.png"}
-                            alt='logo'
-                            width={80}
-                            height={30}
-                            className='ml-[42px]'
-                            quality={100} />
+                    <Link href="/" className='flex gap-2'>
+                        <Sparkles /><span className='font-semibold text-gray-600'>Imangi</span>
                     </Link>
                 </div>
                 <div className='flex justify-end space-x-5'>
