@@ -15,7 +15,7 @@ const Dashboard = () => {
     "A ship in the harbor, a lighthouse, and a starry night...."
   );
 
-  const openai = new OpenAI({ apiKey: "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", dangerouslyAllowBrowser: true });
+  const openai = new OpenAI({ apiKey: "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", dangerouslyAllowBrowser: true });
 
   const generateImage = async () => {
     setPlaceholder(`Search ${prompt}..`);
